@@ -7,19 +7,37 @@
     <title>pruebas</title>
 </head>
 <body>
-    
+    <h1> Este es un script para realizar pruebas</h1>
+    <div>Hola como estas</div>
+
+    <div id="root"></div>
+
     <script>
-        function casaca(){
-            
-        a="[{\"text\":\"Cortar Cebolla\",\"completed\":true},{\"text\":\"Tomar el curso de intro a React\",\"completed\":true},{\"text\":\"Llorar con la llorona\",\"completed\":false},{\"text\":\"LALALALALA\",\"completed\":false},{\"completed\":false,\"text\":\"camaron\"}]"
-        return JSON.parse(a)
+        import React from 'react';
+        import ReactDOM from 'react-dom';
+
+        ReactDOM.render(<App/>,document.getElementById("root"))
+         
+        function App(){
+            return (
+                <React.Fragment>
+
+                <input placeholder="Hola"/>
+            </React.Fragment>
+
+            )
         }
-        
-        console.log(casaca())
 
-        const {casa}=casaca()
-        console.log(casa)
 
+
+        initialValue=[{"text":"Cortar Cebolla","completed":true},
+        {"text":"Tomar el curso de intro a React","completed":false},
+        {"text":"Llorar con la llorona","completed":false},
+        {"text":"LALALALALA","completed":false}]
+
+          const [item, setItem] = React.useState(initialValue);
+
+       console.log(item)
 
     </script>
 </body>
