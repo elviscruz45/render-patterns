@@ -1,5 +1,2 @@
-const initialValue={casa,perro, gato}
-
-console.log(initialValue)
-
-
+const hola="holas"
+console.log(hola.length)
