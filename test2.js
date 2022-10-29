@@ -1,2 +1,3 @@
-const hola="holas"
-console.log(hola.length)
+a={hola:"perro",companero: "senor godos"}
+
+console.log({...a})
